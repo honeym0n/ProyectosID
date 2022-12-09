@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "parrafos";
+    src: url(/Raleway/static/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: "subtitulos";
+    src: url(/Raleway/static/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "titulos";
+    src: url(/Raleway/static/Raleway-Black.ttf);
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-size: 62.5%;
+}
+
+/* Globales */
+h1 {
+    font-family: "titulos";
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "subtitulos";
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: .9rem;
+    font-family: "parrafos";
+    margin: 1.5rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "parrafos";
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn-negro {
+    font-family: "subtitulos";
+    letter-spacing: .2rem;
+    background-color: #000;
+    color: #fff;
+    padding: .7rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+.btn-negro:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+ /* Navbar */
+.navbar {
+    height: 100px;
+}
+
+.navbar .contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar a {
+     margin: 0 1rem; 
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+/* Home Header */
+#home-header {
+    height: 100vh;
+    background-color: #f0bba2;
+    background-image: url(/img/img-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+/* Mainnavbar */
+.mainnavbar {
+    background-image: linear-gradient(to right, #f0bba2, #edcaba);
+}
+
+/* Showcase */
+#showcase {
+    padding-top: 20rem;
+}
+
+#showcase h1,
+#showcase h2 {
+    color: #000;
+    font-size: 4rem;
+} 
+
+#showcase h1 {
+    margin-bottom: -1rem;
+}
+
+#showcase p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    #home-header {
+        background-position: top right;
+    }
+
+    #showcase {
+        padding-top: 120px;
+        /* padding-left: 8rem; */
+    }
+    #showcase h1,
+    #showcase h2 {
+        font-size: 6rem;
+    }
+
+    #showcase h2,
+    #showcase p,
+    #showcase a {
+        margin-left: 130px;
+    }
+
+    #showcase p {
+        padding-bottom: 15px;
+        width: 50%;
+    }
+}
