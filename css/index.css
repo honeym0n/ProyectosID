@@ -67,13 +67,13 @@ img {
 
 .btn-negro {
     font-family: "subtitulos";
-    letter-spacing: .2rem;
     background-color: #000;
     color: #fff;
     padding: .7rem;
     border-radius: 1rem;
     border: 1px solid #000;
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn-negro:hover {
@@ -234,6 +234,15 @@ img {
 }
 
 /* Contacto */
+form .form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .4rem;
+}
+
 #contacto .contenedor {
     padding-top: 3rem;
 }
@@ -242,6 +251,7 @@ img {
 }
 input,
 textarea {
+    font-size: 1rem;
     font-family: "parrafos";
     max-width: 100%;
 }
@@ -264,11 +274,7 @@ form .form-grupo {
     margin-right: .5rem;
 }
 
-form .form-control {
-    display: block;
-    width: 100%;
-    padding: .5rem;
-    color: #495057;
-    border: 1px solid #ced4da;
-    border-radius: .4rem;
+/* Contacto Media Queries */
+@media (min-width: 768px) {
+    
 }
