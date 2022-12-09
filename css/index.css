@@ -276,5 +276,8 @@ form .form-grupo {
 
 /* Contacto Media Queries */
 @media (min-width: 768px) {
-    
+    .contacto-caja {
+        max-width: 100%;
+        
+    }
 }
